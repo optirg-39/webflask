@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask WTForm</title>
+</head>
+<body>
+	<h1>Flask Forms</h1>
+	<form action="/" method="POST">
+		{{ form.FirstName.label(for="username") }}
+		{{ form.FirstName(placeholder="Enter first name", id="username") }}
+		<br>
+		<br>
+		{{ form.LastName.label(for="username") }}
+		{{ form.LastName(placeholder="Enter last name", id="username") }}
+		<br>
+		<br>
+		{{ form.rating.label() }}
+		{{ form.rating() }}
+		<br>
+		<br>	
+		{{ form.choice.label() }}
+		{{ form.choice() }}
+		<br>
+		{{ form.comments.label() }}
+		{{ form.comments() }}
+		<br>
+		<br>
+		{{ form.submit()}}
+	</form>
+</body>
+</html>
